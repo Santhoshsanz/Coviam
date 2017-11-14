@@ -1,0 +1,15 @@
+
+<table>
+  <tr >
+    <td>Title</td>
+    <td>Opening Lines</td>
+    <td>Director</td>
+    <td>Producer</td>
+  </tr>
+  <tr *ngFor="let film of films; let i=index">
+    <td>{{film.title}}</td>
+    <td>{{film.opening_crawl}}</td>
+    <td>{{film.director}}</td>
+    <td>{{film.producer}}</td>
+  </tr>
+</table> 

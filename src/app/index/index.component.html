@@ -1,0 +1,19 @@
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>DOB</td>
+    <td>BirthYear</td>
+    <td>FilmTitle</td>
+  </tr>
+  <tr *ngFor="let people of peoples; let i=index">
+    <td>{{people.name}}</td>
+    <td>{{people.birth_year}}</td>
+    <td>{{people.gender}}</td>
+    <td>
+      <span  *ngFor="let film of people.films;" >
+        <button mat-raised-button accent color=warn (click)=goToFilm(film)>Click me!</button>
+      </span>
+    </td>
+  </tr>
+</table>
